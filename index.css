@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+
+.logo img{
+  height: 30px;
+  margin-left: 30px;
+  display: block;
+}
+
+.nav_main ul {
+  width: 65%;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+.nav_main ul li img {
+ width: 25px;
+}
+
+.nav_main ul li {
+  margin: 0 15px;
+}
+
+.nav_main ul a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 0;
+  position: relative;
+}
+.nav_main ul li a::before{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  background-color: rgb(255,0,0);
+  left: 0;
+  bottom: -10px;
+  transition: all 0.4s;
+}
+.nav_main ul li a:hover::before{
+  width: 100%;
+  
+}
+
+.nav_main {
+  width: 1920px;
+  justify-content: space-between;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  margin: auto;
+  border-bottom: 1px solid rgb(229, 227, 223);
+}
+.search_container{
+  width: 330px;
+  background-color: rgb(140, 130, 122);
+  padding: 25px;
+}
+.input_text{
+  border-bottom: 1px solid #fdfdfd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.input_text input{
+  background: transparent;
+  border: 0;
+  outline: none;
+  color: #Fdfdfd;
+  font-size: 16px;
+  width: 100%;
+}
+.input_text i{
+  color: #ffffff;
+}
+.input_text i placerholder{
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: "DM Sans", sans-serif;
+}
+section{
+  width: 1920px;
+  margin: auto;
+}
+section img{
+  width:100% ;
+  height: 720px;
+}
+.container{
+  background-color: red;
+  width: 450px;
+  height:500px;
+  position: absolute;
+  top: 0%; 
+}
+.image_box{
+  padding-left: 20px;
+  padding: 30px;
+}
+.brand_area .image_box img {
+  width: auto;
+  height: 30px;
+  
+}
+.brand_area h2 {
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 46px;
+}
+.brand_area p{
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 28px;
+
+}
+.content_box {
+  position: absolute;
+  padding-left: 20px;
+  top: 80%;
+}
+.sub_menu {
+  width: 1920px;
+  margin: auto;
+}
+
+.sub_menu ul {
+  display: flex;
+  justify-content: start;
+}
+.sub_menu ul li {
+  list-style: none;
+  display: inherit;
+  position: relative;
+  margin-top: 30px;
+  font-size: 16px;
+}
+.sub_menu ul li a {
+  text-decoration: none;
+  color: rgb(140, 130, 122);
+  font-size: 12px;
+  border-right: 1px solid rgb(229, 227, 223);
+  margin-right: 12px;
+  padding-right: 14px;
+}
+.sub_menu ul li a:hover{
+  color: red;
+}
+.design{
+  padding-top: 120px;
+  width: 1920px;
+  margin: auto;
+}
+.design_container{
+  width: 80%;
+  display: flex;
+  margin: auto;
+  flex-basis: 50%;
+  padding-right: 30px;
+}
+.content{
+  padding-right: 30px;
+}
+.content h1{
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  --arrow-size: 48px;
+  --arrow-margin: 18px;
+  --arrow-margin--hover: 12px;
+  margin-bottom: 30px;
+}
+.content p{
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 18px;
+  --arrow-size: 18px;
+  --arrow-margin: 9px;
+  --arrow-margin--hover: 6px;
+  
+}
+.image {
+  margin: auto;
+}
+.configuration{
+  width: 1920px;
+  margin: auto;
+}
+.configuration_button{
+  width: 80%;
+  margin: auto;
+}
+.configuration .button_container{
+  text-align: center;
+}
+.configuration .button_container button{
+  padding: 12px 15px;
+  background: red;
+  color: #ffff;
+  border: none;
+}
+.configuration .button_container button:hover{
+  background: rgb(189,186,176);
+  color: rgb(255,255,255);
+}
+.advantage{
+  padding: 120px 0px;
+  width: 1920px;
+  margin: auto;
+ 
+}
+.advantage_container{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+
+}
+.advantage_container h3{
+  font-size: 24px;
+  line-height: 34px;
+  --arrow-size: 24px;
+  --arrow-margin: 12px;
+  --arrow-margin--hover: 6px;
+  margin-bottom: 72px;
+  color: red;
+  font-weight: bold;
+
+}
+.advantage_icon {
+  width: 80%;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  column-gap: 90px;
+}
+.icon_box{
+  width: 50%;
+  display: flex;
+  margin-bottom: 72px;
+
+}
+.icon_box h2{
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-align: left;
+}
+.icon_box i {
+  font-size: 50px;
+  padding-right: 30px;
+}
+.snow_rain{
+  padding-top: 120px;
+  width: 1920px;
+  margin: auto;
+  background-color: rgb(242 241 239);
+}
+.snow_rain_container{
+  width: 80%;
+  display: flex;
+  margin: auto;
+  padding-bottom: 60px;
+}
+.snow_rain_content{
+  padding-left: 30px;
+  margin: auto;
+  
+}
+.snow_rain_content h1{
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 46px;
+  --arrow-size: 36px;
+  --arrow-margin: 18px;
+  --arrow-margin--hover: 12px;
+  
+}
+.snow_rain_content p{
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 20px;
+  
+}
+.snow_rain__documentation{
+  padding-right: 20px;
+  margin: auto;
+
+}
+.snow_rain__documentation h1{
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 46px;
+  --arrow-size: 36px;
+  --arrow-margin: 18px;
+  --arrow-margin--hover: 12px;
+
+}
+.snow_rain__documentation p{
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 20px;
+
+}
+.snow_rain__documentation ul{
+  list-style-type: square;
+  list-style-position: outside;
+  padding-left: 24px !important;
+  margin-bottom: 24px;
+}
+.snow_rain_image{
+  padding-left: 20px;
+}
+.button_container button{
+  padding: 12px 15px;
+  background: red;
+  color: #ffff;
+  border: none;
+  }
+.button_container button:hover{
+  background: rgb(189,186,176);
+  color: rgb(255,255,255);
+}
+footer{
+  margin: auto;
+  background-color: rgb(242 241 239);
+  width: 1920px;
+  margin-top: 120px;
+  padding: 0px 96px;
+  display: flex;
+  padding-top: 120px;
+}
+.footer_row{
+  text-align: start;
+  width: 25%;
+}
+.contact_heading h2{
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-left: 30px;
+}
+.contact_menu ul li{
+  list-style-type: none;
+  margin-bottom: 10px;
+
+}
+.contact_menu ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+.contact_menu ul li a:hover{
+  color: red;
+}
+.contact_logo{
+  width:40% ;
+}
+.contact_logo img{
+  width: 100%;
+  margin-top: 20px;
+  padding-left: 30px;
+}
+.icon{
+  margin: auto;
+  background-color: rgb(242 241 239);
+  width: 1920px;
+  padding: 0px 96px;
+  padding-bottom: 120px;
+}
+.contact_icon{
+  width: 90%;
+  text-align: end;
+ 
+}
+.contact_icon i{
+ padding: 10px 10px;
+  margin-left: 15px;
+  color: #ffffff;
+  background-color: #00000077;
+}
+.footer_menu{
+  margin: auto;
+  width: 1920px;
+}
+.p{
+  list-style-type: none;
+}
+.menu ul{
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+
+}
+.menu ul li{
+  list-style-position: inside;
+  padding: 20px 5px;
+
+  
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+}
+.menu ul li a:hover{
+  color: red;
+}
+
+
